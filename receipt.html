@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment Receipt</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f9ff;
+    margin:0;
+}
+
+header{
+    background:#1976D2;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:500px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px lightgray;
+}
+
+h2{
+    color:green;
+    text-align:center;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.button{
+    display:inline-block;
+    background:#1976D2;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    margin:10px;
+}
+
+.button:hover{
+    background:#0D47A1;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Online Medical Appointment System</h1>
+</header>
+
+<div class="container">
+
+<h2>&#9989; Payment Successful</h2>
+
+<p><b>Patient Name:</b> Demo Patient</p>
+
+<p><b>Doctor:</b> Dr. Rajesh</p>
+
+<p><b>Appointment Date:</b> 03-08-2026</p>
+
+<p><b>Appointment Time:</b> 10:30 AM</p>
+
+<p><b>Payment Status:</b> <span style="color:green;">PAID</span></p>
+
+<div style="text-align:center;">
+<a href="#" class="button" onclick="window.print()">&#128424; Print Receipt</a>
+
+<a href="index.html" class="button">&#127968; Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>

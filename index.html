@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Medical Appointment System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f9ff;
+}
+
+header{
+    background:#0077b6;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+ 
+nav{
+    background:#023e8a;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.hero{
+    text-align:center;
+    padding:60px;
+    background:#caf0f8;
+}
+
+.hero h1{
+    font-size:40px;
+    color:#023e8a;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    background:#0077b6;
+    color:white;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#023e8a;
+}
+
+.services{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+.doctor-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    width:90%;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 10px lightgray;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    transition:0.3s;
+    box-shadow:0 0 20px gray;
+}
+
+footer{
+    background:#023e8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Online Medical Appointment System</h1>
+<p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="doctors.html">Doctors</a>
+<a href="auth.php">login/register</a>
+<a href="contact.html">Contact</a>
+<a href="patient_dashboard.php">Patient Dashboard</a>
+<a href="logout.php">logout</a>
+</nav>
+
+<h2 style="text-align:center;color:#1976D2;">
+
+
+
+<br><br>
+
+<section class="hero">
+<h1>Book Your Doctor Appointment Online</h1>
+<p>Fast, Easy and Secure Appointment Booking.</p>
+
+
+</section>
+
+<section class="services">
+
+<div class="card">
+<h2>Expert Doctors</h2>
+<p>Highly qualified specialists available.</p>
+</div>
+
+<div class="card">
+<h2>24/7 Support</h2>
+<p>Emergency support anytime.</p>
+</div>
+
+<div class="card">
+<h2>Easy Booking</h2>
+<p>Book appointments within minutes.</p>
+</div>
+
+</section>
+
+<h2 style="text-align:center;color:#1976D2;">
+
+Why Choose Our Hospital?
+</h2>
+
+<div class="doctor-container">
+
+<div class="card">
+<h3>24/7 Emergency</h3>
+<p>Emergency medical support available anytime.</p>
+</div>
+
+<div class="card">
+<h3>Expert Doctors</h3>
+<p>Highly qualified and experienced specialists.</p>
+</div>
+
+<div class="card">
+<h3>Online Consultation</h3>
+<p>Consult doctors through secure video calls.</p>
+</div>
+
+<div class="card">
+<h3>Easy Appointment</h3>
+<p>Book appointments in just a few clicks.</p>
+</div>
+
+</div>
+
+<br><br>
+
+<section class="reviews">
+
+<h2 style="text-align:center;color:#1976D2;">Patient Reviews</h2>
+
+<div class="doctor-container">
+
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"Excellent service! Booking an appointment was very easy."</p>
+<p><b>- Rajesh</b></p>
+</div>
+
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"Doctors are very friendly and professional."</p>
+<p><b>- Priya</b></p>
+</div>
+
+<div class="card">
+<h3>⭐⭐⭐⭐☆</h3>
+<p>"Video consultation feature is very helpful."</p>
+<p><b>- Sneha</b></p>
+</div>
+
+</div>
+
+</section>
+
+<br><br>
+
+<h2 style="text-align:center;color:#1976D2;">📊 Hospital Statistics</h2>
+
+<div style="display:flex;justify-content:center;gap:30px;flex-wrap:wrap;text-align:center;">
+
+    <div style="background:#E3F2FD;padding:20px;border-radius:10px;width:180px;">
+        <h2>👨‍⚕️ 50+</h2>
+        <p>Expert Doctors</p>
+    </div>
+
+    <div style="background:#E8F5E9;padding:20px;border-radius:10px;width:180px;">
+        <h2>😊 10,000+</h2>
+        <p>Happy Patients</p>
+    </div>
+
+    <div style="background:#FFF3E0;padding:20px;border-radius:10px;width:180px;">
+        <h2>🏥 15+</h2>
+        <p>Medical Departments</p>
+    </div>
+
+    <div style="background:#F3E5F5;padding:20px;border-radius:10px;width:180px;">
+        <h2>⭐ 4.9/5</h2>
+        <p>Patient Rating</p>
+    </div>
+
+</div>
+
+<br><br>
+
+<h2 style="text-align:center;color:#1976D2;">🚑 Emergency Support</h2>
+
+<div class="doctor-container">
+
+<div class="card">
+<h3>24/7 Emergency</h3>
+<p>Emergency Ambulance Available</p>
+<p><b>📞 +91 9876543210</b></p>
+</div>
+
+<div class="card">
+<h3>📧 Email Support</h3>
+<p>medicalcare@gmail.com</p>
+</div>
+
+<div class="card">
+<h3>🕒 Working Hours</h3>
+<p>Monday - Sunday<br>24 Hours</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h2 style="text-align:center;color:#1976D2;">🩺 Health Tips</h2>
+
+<div class="doctor-container">
+
+<div class="card">
+🥗 Eat Healthy Food
+</div>
+
+<div class="card">
+💧 Drink Plenty of Water
+</div>
+
+<div class="card">
+🏃 Exercise Daily
+</div>
+
+<div class="card">
+😴 Sleep 7–8 Hours
+</div>
+
+</div>
+
+<br><br>
+
+<h2 style="text-align:center;color:#1976D2;">📰 Latest Health Updates</h2>
+
+<div class="doctor-container">
+
+<div class="card">
+<h3>💉 Free Vaccination Camp</h3>
+<p>Free vaccination available this Sunday from 9:00 AM to 4:00 PM.</p>
+</div>
+
+<div class="card">
+<h3>❤️ Heart Health Camp</h3>
+<p>Book your free heart checkup with our cardiologists.</p>
+</div>
+
+<div class="card">
+<h3>🩺 Free General Checkup</h3>
+<p>Free health checkup for senior citizens every Friday.</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h2 style="text-align:center;color:#1976D2;">❓ Frequently Asked Questions</h2>
+
+<div class="doctor-container">
+
+<div class="card">
+<h3>How do I book an appointment?</h3>
+<p>Select a doctor, choose a date and time, then complete the payment.</p>
+</div>
+
+<div class="card">
+<h3>Is video consultation available?</h3>
+<p>Yes, online video consultation is available for selected doctors.</p>
+</div>
+
+<div class="card">
+<h3>Can I pay online?</h3>
+<p>Yes, Card Payment and UPI Payment are available.</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h2 style="text-align:center;color:#1976D2;">🏆 Doctor of the Month</h2>
+
+<div class="doctor-container">
+
+<div class="card">
+
+<h3>👨‍⚕️ Dr. Rajesh Kumar</h3>
+
+<p><b>Specialization:</b> Cardiologist</p>
+
+<p><b>Experience:</b> 15+ Years</p>
+
+<p>⭐⭐⭐⭐⭐ (4.9/5)</p>
+
+<p>Best Cardiologist Award - 2026</p>
+
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Online Medical Appointment System | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

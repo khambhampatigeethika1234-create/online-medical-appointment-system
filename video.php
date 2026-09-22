@@ -1,0 +1,165 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['email']))
+{
+    echo "<script>
+            alert('Please Login or Register First');
+            window.location.href='auth.php';
+          </script>";
+    exit();
+}
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Video Consultation</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f9ff;
+    margin:0;
+}
+
+header{
+    background:#1976D2;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+nav{
+    background:#0D47A1;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffeb3b;
+}
+
+.container{
+    width:80%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px lightgray;
+}
+
+.container h2{
+    color:#1976D2;
+}
+
+.container p{
+    color:#555;
+    line-height:1.6;
+}
+
+.button{
+    display:inline-block;
+    background:#28a745;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:15px;
+}
+
+.button:hover{
+    background:#218838;
+}
+
+footer{
+    background:#0D47A1;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>Online Medical Appointment System</h1>
+
+<p>Your Health, Our Priority</p>
+
+</header>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="doctors.html">Doctors</a>
+
+<a href="auth.php">Login/Register</a>
+
+<a href="book_appointment.php">Appointment</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+<div class="container">
+
+<h2>Video Consultation</h2>
+
+<p>
+Consult with our doctors through secure online video calls.
+</p>
+
+<p>
+<b>Available Time:</b> 9:00 AM - 8:00 PM
+</p>
+
+<p>
+<b>Consultation Fee:</b> ₹500
+</p>
+
+
+<a href="video_appointment.html" class="button">
+Book Video Appointment
+</a>
+
+
+</div>
+
+
+<footer>
+
+&copy; 2026 Online Medical Appointment System | All Rights Reserved
+
+</footer>
+
+
+</body>
+
+</html>
